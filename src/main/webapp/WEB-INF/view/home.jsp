@@ -1,3 +1,5 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./WEB-INF/view/css/main.css">
+    <link rel="stylesheet" href="<c:url value="/resources/css/main.css" />">
 </head>
 <body>
     <h1>Welcome to our website</h1>
+    <a href="userform">Click here to fill a form</a>
 </body>
 </html>
