@@ -7,15 +7,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Student Form</title>
+<style>
+.error {
+	color: red;
+}
+</style>
 </head>
 <body>
 	<form:form action="processStudentForm" method="GET"
 		modelAttribute="student">
 		<form:label path="name">Student name: </form:label>
 		<form:input path="name" />
+		<form:errors path="name" cssClass="error" />
 		<br />
 		<form:label path="age">Age: </form:label>
 		<form:input path="age" />
+		<form:errors path="age" cssClass="error" />
 		<br />
 		<form:label path="marks">Marks</form:label>
 		<form:input path="marks" />
