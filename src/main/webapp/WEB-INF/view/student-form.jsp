@@ -27,6 +27,11 @@
 		<form:label path="marks">Marks</form:label>
 		<form:input path="marks" />
 		<br />
+
+		<form:label path="division">Division</form:label>
+		<form:input path="division" />
+		<form:errors path="division" cssClass="error" />
+		<br />
 		<form:label path="subjects">Subjects</form:label>
 		<form:select path="subjects">
 			<form:option value="Maths" label="Maths" />

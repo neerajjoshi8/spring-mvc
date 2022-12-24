@@ -10,7 +10,8 @@
 <body>
 	<h1>User name ${param.name}</h1>
 	<h1>User name using model ${userName}</h1>
-	<h1>User name using model and @RequestParam ${userNameByRequestParam}</h1>
+	<h1>User name using model and @RequestParam
+		${userNameByRequestParam}</h1>
 
 </body>
 </html>

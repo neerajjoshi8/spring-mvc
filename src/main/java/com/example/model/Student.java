@@ -5,17 +5,22 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import com.example.controller.Division;
+
 public class Student {
 	@NotNull(message = "Required field")
 	@Size(min = 3, message = "It should be atleast 3 characters long")
 	private String name;
-	
+
 	@NotNull(message = "Required field")
 	@Min(value = 1, message = "The value should be greater than or equal to 1")
 	@Max(value = 10, message = "The value should be less than or equal to 10")
 	private Integer age;
 	private String marks;
 	private String subjects;
+
+	@Division
+	private String division;
 
 	public Student() {
 	}
@@ -52,9 +57,18 @@ public class Student {
 		this.subjects = subjects;
 	}
 
+	public String getDivision() {
+		return division;
+	}
+
+	public void setDivision(String division) {
+		this.division = division;
+	}
+
 	@Override
 	public String toString() {
-		return "Student [name=" + name + ", age=" + age + ", marks=" + marks + ", subjects=" + subjects + "]";
+		return "Student [name=" + name + ", age=" + age + ", marks=" + marks + ", subjects=" + subjects + ", division="
+				+ division + "]";
 	}
 
 }
